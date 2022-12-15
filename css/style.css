@@ -38,7 +38,7 @@ main {
     background: rgba(0, 0, 0, 0.302);
 
     margin: 0 auto;
-    margin-bottom: 200px;
+    /* margin-bottom: 100px; */
 
     display: flex;
     flex-direction: column;
