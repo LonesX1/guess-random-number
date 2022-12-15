@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title>Game</title>
+</head>
+<body>
+    <header>
+        <div class="lvl">
+            lvl: <span>1</span>
+        </div>
+        <div class="record">Your record: <span id="record">0</span></div>
+    </header>
+
+    <main>
+        <div class="title">
+            <div class="title_of_game">Guess my size ;)</div>
+            <div class="size" id="size">???</div>
+        </div>
+
+        <div class="functional_button_input">
+            <div class="left_side">
+                <input value="0" id="guessed_number" type="number">
+                <button id="start_game">Start game :)</button>
+            </div>
+            <div class="right_side">
+                <div class="try" id="try">
+                    Guess size from 1 to 50
+                </div>
+                <div class="attempts">
+                    Attempts: <span id="attempts">3</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        FOOTER
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

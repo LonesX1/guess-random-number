@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    background: #e63946;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    padding: 0 20px;
+
+    background: rgba(0, 0, 0, 0.302);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 70px;
+    color: #f1faee;
+}
+
+main {
+    width: 700px;
+    height: 400px;
+
+    background: rgba(0, 0, 0, 0.302);
+
+    margin: 0 auto;
+    margin-bottom: 200px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    width: 100%;
+    height: 150px;
+    
+    background: rgba(0, 0, 0, 0.222);
+    color: #f1faee;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.title_of_game {
+    font-size: 70px;
+}
+.size {
+    font-size: 40px;
+    color: rgb(255, 178, 83);
+}
+.functional_button_input {
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 50px;
+    color: white;
+}
+
+.left_side {
+    width: 200px;
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.left_side input {
+    height: 50px;
+    width: 200px;
+
+    font-size: 40px;
+    overflow: hidden;
+    background: none;
+    outline: none;
+    border: 1px solid #1d3557;
+    color: white;
+}
+.left_side button {
+    width: 150px;
+    height: 30px;
+    border: 1px solid #1d3557;
+    background: #34769f70;
+    cursor: pointer;
+    transition: 0.2s;
+    color: white;
+}
+.left_side button:hover {
+    background: #39e661;
+    transition: 0.2s;
+    border: #e63946;
+}
+.right_side {
+    width: 225px;
+    min-height: 80px;
+
+    background: #00000020;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    padding: 10px;
+
+    font-size: 22px;
+}
+footer {
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.208);
+    color: #f1faee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 100px;
+}
