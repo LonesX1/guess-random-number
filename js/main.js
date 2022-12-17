@@ -4,8 +4,16 @@ const textTry = document.getElementById('try');
 const buttonStart = document.getElementById('start_game')
 const attemptsActive = document.getElementById('attempts');
 const recordOn = document.getElementById('record');
+const nextLvl = document.getElementById('next');
+const stayAtThisLvl = document.getElementById('no');
 let attempts = 3;
 let record = 0;
+
+const closeNextLvlMenu = () => {
+    nextLvl.classList.remove('active')
+}
+
+stayAtThisLvl.addEventListener('click', closeNextLvlMenu);
 
 const getRandomArbitrary = (min, max) => {
     return Math.floor(Math.random() * (max - min) + min);
@@ -25,6 +33,7 @@ const reloadGame = () => {
     attemptsActive.innerHTML = attempts;
     size.innerHTML = '???';
 
+    document.querySelector('body').style.background = '#e63946';
     buttonStart.removeEventListener('click', reloadGame);
     buttonStart.addEventListener('click', guessRandomNumber)
 }
@@ -51,7 +60,9 @@ const guessRandomNumber = () => {
         console.log(localStorage.getItem('record'))
         buttonStart.innerHTML = 'Start over';
         recordOn.innerHTML = record;
+        document.querySelector('body').style.background = '#39e661';
 
+        nextLvl.classList.add('active');
         input.value = 0;
         buttonStart.removeEventListener('click', guessRandomNumber);
         buttonStart.addEventListener('click', reloadGame);

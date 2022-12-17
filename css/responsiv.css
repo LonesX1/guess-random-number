@@ -1,0 +1,37 @@
+@media screen and (max-width: 425px) {
+    header {
+        font-size: 35px;
+    }
+    main {
+        width: 400px;
+        height: 550px;
+    }
+    .title_of_game {
+        font-size: 50px;
+    }
+    .size {
+        font-size: 30px;
+    }
+    .functional_button_input {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        width: 350px;
+        height: 470px;
+    }
+}
+@media screen and (max-width: 320px) {
+    main {
+        width: 300px;
+        height: 400px;
+    }
+    .title_of_game {
+        font-size: 40px;
+    }
+}

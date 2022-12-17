@@ -9,13 +9,13 @@ body {
     width: 100%;
     height: 100vh;
 
+    /* background: #39e661; */
     background: #e63946;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
 header {
     width: 100%;
     height: 100px;
